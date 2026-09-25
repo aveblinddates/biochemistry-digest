@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biochemistry Digest</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f7f5f0;
+            color: #202522;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        header {
+            border-bottom: 1px solid #d8d5ce;
+            padding: 24px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f7f5f0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #202522;
+            text-decoration: none;
+            margin-left: 24px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #356b5a;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 6%;
+        }
+
+        .eyebrow {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #356b5a;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 88px);
+            line-height: 0.95;
+            letter-spacing: -4px;
+            max-width: 850px;
+            margin: 0 0 28px;
+        }
+
+        .intro {
+            font-size: 21px;
+            line-height: 1.6;
+            max-width: 680px;
+            color: #555b57;
+        }
+
+        .divider {
+            margin: 70px 0 45px;
+            border-top: 1px solid #d8d5ce;
+        }
+
+        .section-title {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #6b706c;
+            margin-bottom: 24px;
+        }
+
+        .featured {
+            background: #e7eee9;
+            padding: 42px;
+            max-width: 800px;
+        }
+
+        .featured h2 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin: 10px 0 20px;
+        }
+
+        .featured p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4e5551;
+        }
+
+        .tag {
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #356b5a;
+            margin-right: 12px;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 12px;
+            color: #202522;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            border-bottom: 1px solid #202522;
+            padding-bottom: 3px;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .card {
+            border-top: 1px solid #d8d5ce;
+            padding-top: 24px;
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #5d625f;
+            line-height: 1.6;
+        }
+
+        footer {
+            border-top: 1px solid #d8d5ce;
+            padding: 35px 6%;
+            margin-top: 80px;
+            color: #777;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                display: block;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 0 18px 0 0;
+            }
+
+            main {
+                padding-top: 50px;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+
+            .featured {
+                padding: 28px;
+            }
+
+            .columns {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Biochemistry Digest</div>
+
+    <nav>
+        <a href="#">Digest</a>
+        <a href="#">Research</a>
+        <a href="#">Topics</a>
+        <a href="#">Conversations</a>
+        <a href="#">My Papers</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="eyebrow">Weekly Research & Ideas</div>
+
+    <h1>Interesting things happening in biochemistry.</h1>
+
+    <p class="intro">
+        A curated collection of new research papers, articles,
+        conversations, and ideas worth exploring — with explanations
+        of what they mean and why they matter.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="section-title">
+        Featured this week
+    </div>
+
+    <section class="featured">
+
+        <span class="tag">Protein Folding</span>
+        <span class="tag">Research</span>
+
+        <h2>
+            What happens when a protein tries to find its way home?
+        </h2>
+
+        <p>
+            This week's featured research explores the mechanisms
+            underlying protein refolding and what they can tell us
+            about how proteins recover their functional structures.
+        </p>
+
+        <a class="read-more" href="#">
+            Read the breakdown →
+        </a>
+
+    </section>
+
+    <div class="columns">
+
+        <article class="card">
+            <div class="section-title">New Research</div>
+
+            <h3>
+                Papers worth knowing about
+            </h3>
+
+            <p>
+                Short explanations of interesting new findings,
+                including the purpose of the study, what researchers
+                discovered, and why it matters.
+            </p>
+
+            <a class="read-more" href="#">
+                Explore research →
+            </a>
+        </article>
+
+        <article class="card">
+            <div class="section-title">Topic</div>
+
+            <h3>
+                Protein Folding
+            </h3>
+
+            <p>
+                Explore papers, articles, conversations, and
+                foundational ideas connected to one of the most
+                fascinating problems in molecular biology.
+            </p>
+
+            <a class="read-more" href="#">
+                Explore topic →
+            </a>
+        </article>
+
+    </div>
+
+</main>
+
+<footer>
+    Biochemistry Digest · Research, ideas & conversations
+</footer>
+
+</body>
+</html>
